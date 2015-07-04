@@ -1,0 +1,39 @@
+
+* {
+	box-sizing: border-box;
+}
+
+.clearfix{
+	clear: both;
+}
+
+.content{
+	width: 715px;
+	margin: 0 auto;
+}
+
+.grid {
+	margin: 0 auto;
+}
+
+.area_image{
+	width: 160px;
+	height: 200px;
+	text-align: center;
+	display: inline-block;
+}
+
+.area_image h3{
+	margin: 0;
+	margin-bottom: 2px;
+}
+
+.area_image img {
+	float: left;
+	width: 150px;
+	height: 150px;
+	margin: 5px;
+	margin-top: 0px;
+	box-shadow: 2px 2px 15px;
+
+}
