@@ -21,6 +21,7 @@
 	height: 200px;
 	text-align: center;
 	display: inline-block;
+	position: relative;
 }
 
 .area_image h3{
@@ -28,12 +29,14 @@
 	margin-bottom: 2px;
 }
 
+
 .area_image img {
-	float: left;
+	/*float: left;*/
 	width: 150px;
 	height: 150px;
 	margin: 5px;
 	margin-top: 0px;
 	box-shadow: 2px 2px 15px;
-
+	left: 0;
+	position: absolute;
 }
