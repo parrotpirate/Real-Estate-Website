@@ -16,6 +16,15 @@
 	margin: 0 auto;
 }
 
+.grid a {
+	text-decoration: none;
+}
+
+.grid a:visited {
+	text-decoration: none;
+	color: black;
+}
+
 .area_image{
 	width: 160px;
 	height: 200px;
@@ -36,7 +45,25 @@
 	height: 150px;
 	margin: 5px;
 	margin-top: 0px;
-	box-shadow: 2px 2px 15px;
+	box-shadow: 2px 2px 15px black;
 	left: 0;
 	position: absolute;
+}
+
+.wrapper img:first-child{
+	opacity: 0;
+	transition: opacity .3s ease-in-out;
+}
+
+.wrapper img:last-child{
+	opacity: 1;
+	transition: opacity .3s ease-in-out;
+}
+
+.wrapper:hover img:first-child{
+	opacity: 1;
+}
+
+.wrapper:hover img:last-child{
+	opacity: 0;
 }
