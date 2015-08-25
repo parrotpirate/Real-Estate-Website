@@ -1,11 +1,67 @@
+// ***VARIABLES***
+$font-stack: "Merriweather", serif;
+$primary-color: #E2BE00;
+$secondary-color-1: #DCE100;
+$secondary-hilight: #888C00;
+$secondary-color-2: #E29A00;
+$secondary-hilight-2: #8C5F00;
+$complement-color: #330E9C;
+
+// ***MIXIN'S***
+@mixin vertical-align {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+// ***START***
+html,
+body {
+    // width: 100%;
+    // height: 100%;
+    margin: 0;
+
+    // padding: 0px;
+    // overflow-x: hidden;
+}
+
+body {
+    background-image: url("../images/subtle_white_mini_waves.png");
+}
+
 * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+// ***HEADER BAR***
 header {
+    font-family: 'Lato', sans-serif;
+    position: fixed;
+    z-index: 500;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 60px;
+    opacity: .80;
+    border-bottom: 1px solid black;
+    background-color: #e2be00;
+
     #info {
+        opacity: 1;
+
         .wrapper {
+            position: absolute;
+            left: 10px;
+            display: inline-block;
             overflow: hidden;
             width: 50px;
             height: 50px;
@@ -16,6 +72,85 @@ header {
                 top: -18px;
                 left: -7px;
             }
+        }
+
+        p {
+            position: absolute;
+            left: 65px;
+            display: inline-block;
+            margin: 0;
+        }
+
+        p:nth-child(2) {
+            top: 5px;
+
+            @extend p;
+        }
+
+        p:nth-child(3) {
+            top: 25px;
+
+            @extend p;
+        }
+    }
+
+    #login {
+        position: absolute;
+        top: 0;
+        right: 15px;
+        opacity: 1;
+
+        li {
+            font-size: 25px;
+            display: inline-block;
+            margin: 0;
+            padding: 13px 5px 17px 5px;
+            -webkit-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+        }
+
+        li:hover {
+            color: white;
+            background-color: $complement-color;
+        }
+    }
+}
+
+// ***END HEADER BAR***
+
+// ***IMAGE BANNER***
+#jumbotron {
+    width: 100%;
+    margin: 0;
+
+    .wrapper {
+        overflow: hidden;
+        height: 260px;
+
+        img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+        }
+    }
+}
+
+// ***END IMAGE BANNER***
+
+// ***NAV BAR***
+.nav {
+    width: 100%;
+    height: 50px;
+    opacity: .9;
+    border-bottom: 1px solid black;
+    background-color: $secondary-color-2;
+    box-shadow: 4px 4px 15px;
+
+    ul {
+        @include vertical-align;
+
+        li {
+            display: inline-block;
         }
     }
 }
