@@ -1,5 +1,6 @@
 // ***VARIABLES***
-$font-stack: "Merriweather", serif;
+$font-1: "Merriweather", serif;
+$font-2: "Lato", sans-serif;
 $primary-color: #E2BE00;
 $secondary-color-1: #DCE100;
 $secondary-hilight: #888C00;
@@ -110,6 +111,7 @@ header {
         }
 
         li:hover {
+            cursor: pointer;
             color: white;
             background-color: $complement-color;
         }
@@ -146,11 +148,58 @@ header {
     background-color: $secondary-color-2;
     box-shadow: 4px 4px 15px;
 
+    // text-align: center;
     ul {
-        @include vertical-align;
+        height: 100%;
 
         li {
             display: inline-block;
+            height: 100%;
+            margin-right: -4px;
+
+            a {
+                font-family: $font-2;
+                font-weight: bold;
+                display: block;
+                height: 100%;
+                padding-top: 13px;
+                padding-right: 15px;
+                padding-left: 15px;
+                transition: all .3s ease-in-out;
+                text-decoration: none;
+                color: black;
+            }
+
+            a:hover {
+                color: white;
+                background-color: $secondary-hilight-2;
+            }
         }
+    }
+
+    .dropdown {
+        position: absolute;
+        display: none;
+        transition: all .3s ease-in-out;
+    }
+
+    .dropdown li {
+        display: block;
+        height: 50px;
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+        background-color: $secondary-color-2;
+    }
+
+    .dropdown li:first-of-type {
+        border-top: 1px solid black;
+    }
+
+    .dropdown li:last-of-type {
+        border-bottom: 1px solid black;
+    }
+
+    .has_dropdown:hover .dropdown {
+        display: block;
     }
 }
