@@ -1,12 +1,12 @@
 // ***VARIABLES***
-$font-1: "Merriweather", serif;
-$font-2: "Lato", sans-serif;
-$primary-color: #E2BE00;
-$secondary-color-1: #DCE100;
-$secondary-hilight: #888C00;
-$secondary-color-2: #E29A00;
-$secondary-hilight-2: #8C5F00;
-$complement-color: #330E9C;
+$font1: "Merriweather", serif;
+$font2: "Lato", sans-serif;
+$primarycolor: #e2be00;
+$secondarycolor1: #dce100;
+$secondaryhilight: #888c00;
+$secondarycolor2: #e29a00;
+$secondaryhilight2: #8c5f00;
+$complementcolor: #330e9c;
 
 // ***MIXIN'S***
 @mixin vertical-align {
@@ -41,6 +41,10 @@ ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
+}
+
+.clearfix {
+    clear: both;
 }
 
 // ***HEADER BAR***
@@ -113,7 +117,7 @@ header {
         li:hover {
             cursor: pointer;
             color: white;
-            background-color: $complement-color;
+            background-color: $complementcolor;
         }
     }
 }
@@ -144,22 +148,22 @@ header {
     width: 100%;
     height: 50px;
     border-bottom: 1px solid black;
-    background-color: $secondary-color-2;
+    background-color: $secondarycolor2;
     box-shadow: 4px 4px 15px;
 
     // text-align: center;
     ul {
-        height: 100%;
         z-index: 5;
+        height: 100%;
 
         li {
+            z-index: 5;
             display: inline-block;
             height: 100%;
             margin-right: -4px;
-            z-index: 5;
 
             a {
-                font-family: $font-2;
+                font-family: $font2;
                 font-weight: bold;
                 display: block;
                 height: 100%;
@@ -173,7 +177,7 @@ header {
 
             a:hover {
                 color: white;
-                background-color: $secondary-hilight-2;
+                background-color: $secondaryhilight2;
             }
         }
     }
@@ -189,7 +193,7 @@ header {
         height: 50px;
         border-right: 1px solid black;
         border-left: 1px solid black;
-        background-color: $secondary-color-2;
+        background-color: $secondarycolor2;
     }
 
     .dropdown li:first-of-type {
@@ -205,3 +209,29 @@ header {
     }
 }
 
+// ***END NAV BAR***
+
+.main_body {
+    overflow: hidden;
+}
+
+.sidebar {
+    float: left;
+    width: 300px;
+    height: 100%;
+    margin-bottom: -101%;
+    padding: 10px 10px 101% 10px;
+    background-color: $primarycolor;
+    box-shadow: 2px 2px 15px;
+}
+
+// ***FOOTER***
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 75px;
+    background-color: $complementcolor;
+}
+
+// ***END FOOTER***'
