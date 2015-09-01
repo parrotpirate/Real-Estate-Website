@@ -83,8 +83,7 @@ header {
   width: 100%;
   height: 50px;
   border-bottom: 1px solid black;
-  background-color: #e29a00;
-  box-shadow: 4px 4px 15px; }
+  background-color: #e29a00; }
   .nav ul {
     z-index: 5;
     height: 100%; }
@@ -126,21 +125,88 @@ header {
 
 .main_body {
   overflow: hidden; }
-
-.sidebar {
-  float: left;
-  width: 300px;
-  height: 100%;
-  margin-bottom: -101%;
-  padding: 10px 10px 101% 10px;
-  background-color: #e2be00;
-  box-shadow: 2px 2px 15px; }
+  .main_body .sidebar {
+    float: left;
+    width: 13%;
+    height: 100%;
+    margin-bottom: -101%;
+    padding: 10px 10px 101% 10px;
+    background-color: #e2be00; }
+    .main_body .sidebar .featured, .main_body .sidebar .blog {
+      width: 90%;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      border: 1px solid black;
+      background-color: white; }
+      .main_body .sidebar .featured .title, .main_body .sidebar .blog .title {
+        font-family: "Lato", sans-serif;
+        width: 100%;
+        height: 30px;
+        text-align: center;
+        vertical-align: middle;
+        border-bottom: 1px solid black;
+        background-color: #e29a00; }
+        .main_body .sidebar .featured .title div, .main_body .sidebar .blog .title div {
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%); }
+      .main_body .sidebar .featured .img, .main_body .sidebar .blog .img {
+        position: relative;
+        width: 100%;
+        height: 0;
+        margin-bottom: 0;
+        padding-bottom: 75%; }
+        .main_body .sidebar .featured .img img, .main_body .sidebar .blog .img img {
+          width: 100%;
+          object-fit: contain; }
+      .main_body .sidebar .featured .info, .main_body .sidebar .blog .info {
+        font-family: "Lato", sans-serif;
+        font-size: 12px;
+        width: 100%;
+        margin-top: 0; }
+    .main_body .sidebar .blog {
+      height: auto; }
+      .main_body .sidebar .blog .title div {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%); }
+      .main_body .sidebar .blog .blog_posts {
+        padding: 10px 5px;
+        text-align: center; }
+        .main_body .sidebar .blog .blog_posts a {
+          font-family: "Lato", sans-serif;
+          font-size: 14px;
+          font-weight: bold;
+          color: #330e9c; }
+        .main_body .sidebar .blog .blog_posts p, .main_body .sidebar .blog .blog_posts header #info p:nth-child(2), header #info .main_body .sidebar .blog .blog_posts p:nth-child(2), .main_body .sidebar .blog .blog_posts header #info p:nth-child(3), header #info .main_body .sidebar .blog .blog_posts p:nth-child(3) {
+          font-family: 'Times New Roman', Times, serif;
+          font-size: 12px;
+          margin-top: 2px; }
+        .main_body .sidebar .blog .blog_posts p:last-child, .main_body .sidebar .blog .blog_posts header #info p:last-child:nth-child(2), header #info .main_body .sidebar .blog .blog_posts p:last-child:nth-child(2), .main_body .sidebar .blog .blog_posts header #info p:last-child:nth-child(3), header #info .main_body .sidebar .blog .blog_posts p:last-child:nth-child(3) {
+          margin-top: 20px;
+          margin-bottom: 0; }
+          .main_body .sidebar .blog .blog_posts p:last-child a, .main_body .sidebar .blog .blog_posts header #info p:last-child:nth-child(2) a, header #info .main_body .sidebar .blog .blog_posts p:last-child:nth-child(2) a, .main_body .sidebar .blog .blog_posts header #info p:last-child:nth-child(3) a, header #info .main_body .sidebar .blog .blog_posts p:last-child:nth-child(3) a {
+            font-size: 12px;
+            font-weight: normal; }
+        .main_body .sidebar .blog .blog_posts img {
+          width: 15px;
+          height: 15px;
+          margin-right: 3px;
+          vertical-align: -15%; }
+  .main_body .content {
+    float: right;
+    width: 85%;
+    padding: 50px 30px; }
+    .main_body .content h1 {
+      font-family: "Merriweather", serif;
+      text-align: center; }
 
 footer {
   position: relative;
   bottom: 0;
   width: 100%;
   height: 75px;
-  background-color: #330e9c; }
+  background-color: #330e9c;
+  color: white; }
 
 /*# sourceMappingURL=default.css.map */
