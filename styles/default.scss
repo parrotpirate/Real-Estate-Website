@@ -222,6 +222,7 @@ header {
         margin-bottom: -101%;
         padding: 10px 10px 101% 10px;
         background-color: $primarycolor;
+        border-right: 1px solid black;
 
         // box-shadow: 2px 2px 15px;
         .featured {
@@ -234,9 +235,8 @@ header {
             .title {
                 font-family: $font2;
                 width: 100%;
-                height: 30px;
+                height: 40px;
                 text-align: center;
-                vertical-align: middle;
                 border-bottom: 1px solid black;
                 background-color: $secondarycolor2;
 
@@ -343,6 +343,11 @@ footer {
     height: 75px;
     background-color: $complementcolor;
     color: white;
+    border-top: 1px solid black;
+
+        div{
+            float: left;
+        }
 }
 
 // ***END FOOTER***'

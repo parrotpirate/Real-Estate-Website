@@ -131,7 +131,8 @@ header {
     height: 100%;
     margin-bottom: -101%;
     padding: 10px 10px 101% 10px;
-    background-color: #e2be00; }
+    background-color: #e2be00;
+    border-right: 1px solid black; }
     .main_body .sidebar .featured, .main_body .sidebar .blog {
       width: 90%;
       margin: 0 auto;
@@ -141,9 +142,8 @@ header {
       .main_body .sidebar .featured .title, .main_body .sidebar .blog .title {
         font-family: "Lato", sans-serif;
         width: 100%;
-        height: 30px;
+        height: 40px;
         text-align: center;
-        vertical-align: middle;
         border-bottom: 1px solid black;
         background-color: #e29a00; }
         .main_body .sidebar .featured .title div, .main_body .sidebar .blog .title div {
@@ -207,6 +207,9 @@ footer {
   width: 100%;
   height: 75px;
   background-color: #330e9c;
-  color: white; }
+  color: white;
+  border-top: 1px solid black; }
+  footer div {
+    float: left; }
 
 /*# sourceMappingURL=default.css.map */
