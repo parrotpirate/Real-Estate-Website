@@ -1,0 +1,31 @@
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 75px;
+    background-color: $complementcolor;
+    color: white;
+    border-top: 1px solid black;
+
+        .footer_info_left{
+            float: left;
+            font-size: 12px;
+
+            p{
+                margin: 0;
+            }
+        }
+
+        .footer_info_right{
+            float: right;
+            font-size: 12px;
+
+            p{
+                margin: 0;
+            }
+
+            a{
+                color: white;
+            }
+        }
+}

@@ -1,0 +1,163 @@
+// ***HEADER BAR***
+header {
+    font-family: 'Lato', sans-serif;
+    position: fixed;
+    z-index: 500;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 60px;
+    opacity: .80;
+    border-bottom: 1px solid black;
+    background-color: #e2be00;
+
+    #info {
+        opacity: 1;
+
+        .wrapper {
+            position: absolute;
+            left: 10px;
+            display: inline-block;
+            overflow: hidden;
+            width: 50px;
+            height: 50px;
+            border-radius: 180px;
+
+            img {
+                position: relative;
+                top: -18px;
+                left: -7px;
+            }
+        }
+
+        p {
+            position: absolute;
+            left: 65px;
+            display: inline-block;
+            margin: 0;
+        }
+
+        p:nth-child(2) {
+            top: 5px;
+
+            @extend p;
+        }
+
+        p:nth-child(3) {
+            top: 25px;
+
+            @extend p;
+        }
+    }
+
+    #login {
+        position: absolute;
+        top: 0;
+        right: 15px;
+        opacity: 1;
+
+        li {
+            font-size: 25px;
+            display: inline-block;
+            margin: 0;
+            padding: 13px 5px 17px 5px;
+            -webkit-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+        }
+
+        li:hover {
+            cursor: pointer;
+            color: white;
+            background-color: $complementcolor;
+        }
+    }
+}
+
+// ***END HEADER BAR***
+
+// ***IMAGE BANNER***
+#jumbotron {
+    width: 100%;
+    margin: 0;
+
+    .wrapper {
+        overflow: hidden;
+        height: 260px;
+
+        img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+        }
+    }
+}
+
+// ***END IMAGE BANNER***
+
+// ***NAV BAR***
+.nav {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid black;
+    background-color: $secondarycolor2;
+
+    // box-shadow: 4px 4px 15px;
+    // text-align: center;
+    ul {
+        z-index: 5;
+        height: 100%;
+
+        li {
+            z-index: 5;
+            display: inline-block;
+            height: 100%;
+            margin-right: -4px;
+
+            a {
+                font-family: $font2;
+                font-weight: bold;
+                display: block;
+                height: 100%;
+                padding-top: 13px;
+                padding-right: 15px;
+                padding-left: 15px;
+                transition: all .3s ease-in-out;
+                text-decoration: none;
+                color: black;
+            }
+
+            a:hover {
+                color: white;
+                background-color: $secondaryhilight2;
+            }
+        }
+    }
+
+    .dropdown {
+        position: absolute;
+        display: none;
+        transition: all .3s ease-in-out;
+    }
+
+    .dropdown li {
+        display: block;
+        height: 50px;
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+        background-color: $secondarycolor2;
+    }
+
+    .dropdown li:first-of-type {
+        border-top: 1px solid black;
+    }
+
+    .dropdown li:last-of-type {
+        border-bottom: 1px solid black;
+    }
+
+    .has_dropdown:hover .dropdown {
+        display: block;
+    }
+}
+
+// ***END NAV BAR***
