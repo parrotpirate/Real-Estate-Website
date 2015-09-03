@@ -345,8 +345,26 @@ footer {
     color: white;
     border-top: 1px solid black;
 
-        div{
+        .footer_info_left{
             float: left;
+            font-size: 12px;
+
+            p{
+                margin: 0;
+            }
+        }
+
+        .footer_info_right{
+            float: right;
+            font-size: 12px;
+
+            p{
+                margin: 0;
+            }
+
+            a{
+                color: white;
+            }
         }
 }
 
