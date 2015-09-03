@@ -32,3 +32,31 @@ ul {
 .clearfix {
     clear: both;
 }
+
+.content {
+    float: right;
+    width: 85%;
+    padding: 50px 30px;
+
+    h1 {
+        font-family: $font1;
+        text-align: center;
+    }
+
+    .photo_grid{
+
+        .area_image{
+
+            h3{
+            }
+
+            .slideshow{
+
+                img{
+                    height: 100px;
+                    width: 100px;
+                }
+            }
+        }
+    }
+}

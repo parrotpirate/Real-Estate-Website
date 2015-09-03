@@ -309,3 +309,19 @@ ul {
 .clearfix {
   clear: both;
 }
+
+.content {
+  float: right;
+  width: 85%;
+  padding: 50px 30px;
+}
+
+.content h1 {
+  font-family: "Merriweather", serif;
+  text-align: center;
+}
+
+.content .photo_grid .area_image .slideshow img {
+  height: 100px;
+  width: 100px;
+}
