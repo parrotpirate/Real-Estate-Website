@@ -1,8 +1,8 @@
-@import '../partials/variables';
-@import '../partials/mixins';
-@import '../partials/header';
-@import '../partials/sidebar';
-@import '../partials/footer';
+@import "../partials/variables";
+@import "../partials/mixins";
+@import "../partials/header";
+@import "../partials/sidebar";
+@import "../partials/footer";
 
 html,
 body {
@@ -41,20 +41,41 @@ ul {
     h1 {
         font-family: $font1;
         text-align: center;
+        text-decoration: underline;
     }
 
-    .photo_grid{
+    .photo_grid {
+        width: 100%;
+        margin: 0 auto;
 
-        .area_image{
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: black;
 
-            h3{
-            }
+            .area_image {
+                display: inline-block;
+                margin: 0 30px 30px 30px;
 
-            .slideshow{
+                h3 {
+                    font-family: $font1;
+                    font-size: 30px;
+                    margin: 10px;
+                    text-align: center;
+                }
 
-                img{
-                    height: 100px;
-                    width: 100px;
+                .slideshow {
+                    position: relative;
+                    width: 300px;
+                    height: 300px;
+                    border: 1px solid black;
+                    box-shadow: 5px 5px 5px black;
+
+                    img {
+                        position: absolute;
+                        width: 300px;
+                        height: 300px;
+                    }
                 }
             }
         }

@@ -319,9 +319,42 @@ ul {
 .content h1 {
   font-family: "Merriweather", serif;
   text-align: center;
+  text-decoration: underline;
 }
 
-.content .photo_grid .area_image .slideshow img {
-  height: 100px;
-  width: 100px;
+.content .photo_grid {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.content .photo_grid a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+
+.content .photo_grid a .area_image {
+  display: inline-block;
+  margin: 0 30px 30px 30px;
+}
+
+.content .photo_grid a .area_image h3 {
+  font-family: "Merriweather", serif;
+  font-size: 30px;
+  margin: 10px;
+  text-align: center;
+}
+
+.content .photo_grid a .area_image .slideshow {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  box-shadow: 5px 5px 5px black;
+}
+
+.content .photo_grid a .area_image .slideshow img {
+  position: absolute;
+  width: 300px;
+  height: 300px;
 }
