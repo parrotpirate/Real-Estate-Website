@@ -23,12 +23,11 @@ header #info .wrapper {
   width: 50px;
   height: 50px;
   border-radius: 180px;
+  text-align: center;
 }
 
-header #info .wrapper img {
-  position: relative;
-  top: -18px;
-  left: -7px;
+header #info .wrapper i {
+  font-size: 50px;
 }
 
 header #info p, header #info p:nth-child(2), header #info p:nth-child(3) {
@@ -158,7 +157,7 @@ header #login li:hover {
   width: 13%;
   height: 100%;
   margin-bottom: -101%;
-  padding: 10px 10px 101% 10px;
+  padding: 50px 10px 101% 10px;
   background-color: #e2be00;
   border-right: 1px solid black;
 }
@@ -263,6 +262,7 @@ footer {
   background-color: #330e9c;
   color: white;
   border-top: 1px solid black;
+  padding-top: 10px;
 }
 
 footer .footer_info_left {
@@ -324,13 +324,15 @@ ul {
 
 .content .photo_grid {
   width: 100%;
-  margin: 0 7%;
+  margin: 0 3% 0 3%;
 }
 
 .content .photo_grid a {
-  display: inline-block;
+  display: block;
   text-decoration: none;
   color: black;
+  float: left;
+  width: 25%;
 }
 
 .content .photo_grid a .area_image {
@@ -340,15 +342,15 @@ ul {
 
 .content .photo_grid a .area_image h3 {
   font-family: "Merriweather", serif;
-  font-size: 30px;
+  font-size: 23px;
   margin: 10px;
   text-align: center;
 }
 
 .content .photo_grid a .area_image .slideshow {
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   border: 1px solid black;
   box-shadow: 5px 5px 5px black;
 }

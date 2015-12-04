@@ -46,12 +46,14 @@ ul {
 
     .photo_grid {
         width: 100%;
-        margin: 0 7%;
+        margin: 0 3% 0 3%;
 
         a {
-            display: inline-block;
+            display: block;
             text-decoration: none;
             color: black;
+            float: left;
+            width: 25%;
 
             .area_image {
                 display: inline-block;
@@ -59,15 +61,15 @@ ul {
 
                 h3 {
                     font-family: $font1;
-                    font-size: 30px;
+                    font-size: 23px;
                     margin: 10px;
                     text-align: center;
                 }
 
                 .slideshow {
                     position: relative;
-                    width: 300px;
-                    height: 300px;
+                    width: 250px;
+                    height: 250px;
                     border: 1px solid black;
                     box-shadow: 5px 5px 5px black;
 

@@ -6,26 +6,27 @@ footer {
     background-color: $complementcolor;
     color: white;
     border-top: 1px solid black;
+    padding-top: 10px;
 
-        .footer_info_left{
-            float: left;
-            font-size: 12px;
+    .footer_info_left {
+        float: left;
+        font-size: 12px;
 
-            p{
-                margin: 0;
-            }
+        p {
+            margin: 0;
+        }
+    }
+
+    .footer_info_right {
+        float: right;
+        font-size: 12px;
+
+        p {
+            margin: 0;
         }
 
-        .footer_info_right{
-            float: right;
-            font-size: 12px;
-
-            p{
-                margin: 0;
-            }
-
-            a{
-                color: white;
-            }
+        a {
+            color: white;
         }
+    }
 }
